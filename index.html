@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Client 1 (VanillaJS)</title>
+        
+        <!-- styles -->
+        <link rel="stylesheet" href="./styles/login.css">
+        <link rel="stylesheet" href="./styles/index.css">
+        <link rel="stylesheet" href="./styles/messagesListView.css">
+        <link rel="stylesheet" href="./styles/conversationView.css">
+        
+        <!-- dependencies -->
+        <script src="./libs/xp.js"></script>
+
+        <!-- init xmpp client -->
+        <script src="./initXmpp.js"></script>
+
+        <!-- uitilities -->
+        <script src="./utilities/viewManager.js"></script>
+        <script src="./utilities/messageAccumulator.js"></script>
+        <script src="./utilities/filterUserMessages.js"></script>
+        
+        <!-- Routers -->
+        <script src="./routers/sendMessage.js"></script>
+
+        <!-- handlers -->
+        <script src="./handlers/onOnline.js"></script>
+        <script src="./handlers/onOffline.js"></script>
+        <script src="./handlers/onStanza.js"></script>
+        
+        <!-- views -->
+        <script src="./views/header.js"></script>
+        <script src="./views/containers/home.js"></script>
+        <script src="./views/login.js"></script>
+        <script src="./views/conversationView.js"></script>
+        <script src="./views/messagesListView.js"></script>
+        <script src="./views/rosterView.js"></script>
+        
+        <!-- main.js -->
+        <script src="./index.js" defer></script>
+    </head>
+    
+    <body>
+        <div id="status" style="display:none">
+            offline
+        </div>
+
+        <div class="root">
+        </div>
+    </body>
+</html>

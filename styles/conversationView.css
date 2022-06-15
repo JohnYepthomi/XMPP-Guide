@@ -1,0 +1,128 @@
+/* 
+    Available Selectors:
+        ids: 
+            - none.
+        classes: 
+            - message-view-container : Parent Element.
+            - message-header: the message-viwe header.
+            - from : sender message container.
+            - from-username : the message sender username.
+            - my : current user.
+            - body : the message body.
+            - message-input-container : the message input container.
+            - message-input: the message input area. 
+            - message-send-button : the send button.
+ */
+
+.message-view-container {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+    width: 100%;
+    height: calc(100vh - 75px);
+    padding-left: var(--padding-md);
+    padding-right: var(--padding-md);
+    padding-top: var(--padding-sm);
+    background-color: rgb(226, 219, 219);
+    margin-bottom: 10px;
+    overflow-y: scroll;
+}
+
+.message-header{
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--padding-md);
+    background-color: var(--brand-color-1);
+}
+
+.more{
+    cursor: pointer;
+}
+
+.user-name{
+    font-size: var(--fs);
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+
+.from{
+    max-width: 400px;
+    width: fit-content;
+    background-color: white;
+    padding: var(--padding-sm);
+    border-radius: 7px;
+    margin-bottom: 7px;
+    box-shadow: 0px 1.05px 2px 0.1px rgba(135, 132, 132, 0.75);
+}
+
+.from-username{
+    font-size: 0.65rem;
+    color: gray;
+}
+
+
+.message-body{
+    font-size: 0.75rem;
+}
+
+.self{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    margin-bottom: 7px;
+}
+
+.self .message-body{
+    max-width: 400px;
+    width: fit-content;
+    font-size: 0.75rem;
+    padding: var(--padding-sm);
+    background-color: rgb(232, 251, 169);
+    border-radius: 7px;
+    box-shadow: 0px 1.05px 2px 0.1px rgba(135, 132, 132, 0.75);
+}
+
+.message-input-container{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: var(--padding-sm);
+    border-radius: 5px;
+    background-color: rgb(226, 219, 219);
+}
+
+.message-input{
+    width: 100%;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    padding: var(--padding-sm);
+    outline: none;
+    box-shadow: 0px 1px 2px 0.1px rgba(116, 114, 114, 0.75);
+}
+
+.message-send-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--brand-color-1);
+    box-shadow: 0px 1px 2px 0.1px rgba(116, 114, 114, 0.75);
+    cursor: pointer;
+    user-select: none;
+}
+
+.back-button{
+    cursor: pointer;
+}

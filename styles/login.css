@@ -1,0 +1,91 @@
+/* Selectors:
+    ids:
+        - username
+        - password
+    classes:
+        - login-container: parent
+        - login-form-input : inputs container
+        - login-header: header container
+        - login-body : body container
+        - login-form : form container 
+        - login-button : login button 
+*/
+
+.login-container{
+    padding: 5px;
+    height: 100vh;
+    background-color: rgb(18, 16, 31);
+}
+
+.login-header{
+    text-align: center;
+    padding: 5px;
+    color: white;
+    border-bottom: 1px solid rgb(58, 55, 55);
+}
+
+.login-body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: calc(100vh - 20vh);
+    /* border: 1px solid red; */
+}
+
+h5{
+    padding: 10px;
+    font-size: 1.2rem;
+    color: chocolate;
+}
+
+.login-form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.login-form-input{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    padding: 5px;
+}
+
+.login-form-input label{
+    font-size: 0.75rem;
+    color: white;
+}
+
+#login-button{
+    border: none;
+    padding: 5px;
+    border-radius: 3px;
+    font-weight: bold;
+    width: 100%;
+    color: rgb(17, 16, 16);
+    background-color: rgb(111, 184, 82);
+}
+
+input::placeholder{
+    padding: 3px;
+    font-size: 0.65rem;
+}
+
+#username, #password{
+    border: none;
+    border: 1px solid gray;
+    border-radius: 3px;
+    height: 25px;
+    padding: 5px;
+    
+}
+
+#username:focus, #password:focus{
+    outline: 1px solid blue;
+}

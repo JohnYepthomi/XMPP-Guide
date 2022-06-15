@@ -1,0 +1,32 @@
+/* 
+    Available Selectors: 
+        ids: 
+            - none.
+        classes:
+            - message-container : Parent Element.
+            - direct-messages : direct messages list.
+            - group-messages : group messages list.
+*/
+
+.messages-container{
+    /* padding: var(--padding-sm); */
+}
+
+ul{
+    list-style-type: none;
+}
+
+.direct-messages, .group-messages li{
+    width: 100%;
+    font-weight: bold;
+    padding: var(--padding-md);
+    border-bottom: 1px solid gray;
+    cursor: pointer;
+}
+
+.no-messages{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 35px);
+}
